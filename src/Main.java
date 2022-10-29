@@ -36,7 +36,7 @@ public class Main {
         }
     }
 
-    private static <ex> void zipFiles(String path, String[] files) {
+    private static void zipFiles(String path, String[] files) {
         //Открываем два потока данных
         try (ZipOutputStream zout = new ZipOutputStream(new FileOutputStream(path))) {
             for (String file : files) {
